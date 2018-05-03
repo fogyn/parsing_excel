@@ -1,13 +1,9 @@
 package com.fogyn.excel;
 
-import javafx.fxml.FXML;
 import javafx.scene.shape.Circle;
 
-import java.util.Timer;
 import java.util.TimerTask;
 
-import static java.lang.Thread.currentThread;
-import static java.lang.Thread.sleep;
 import static javafx.scene.paint.Color.GREEN;
 import static javafx.scene.paint.Color.WHITE;
 
