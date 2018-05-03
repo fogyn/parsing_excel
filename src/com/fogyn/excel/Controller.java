@@ -1,4 +1,4 @@
-package sample;
+package com.fogyn.excel;
 
 import javafx.event.ActionEvent;
 

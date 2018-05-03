@@ -1,4 +1,4 @@
-package sample;
+package com.fogyn.excel;
 
 import javafx.fxml.FXML;
 import javafx.scene.shape.Circle;

@@ -1,4 +1,4 @@
-package sample;
+package com.fogyn.excel;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
