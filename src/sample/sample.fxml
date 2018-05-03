@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="180.0" prefWidth="490.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <AnchorPane prefHeight="180.0" prefWidth="446.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <Button fx:id="button1" mnemonicParsing="false" onAction="#onClickMethod" text="Добавить" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="390.0" />
+        <Button fx:id="button2" mnemonicParsing="false" onAction="#onClickMethod2" text="Очистить" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="209.0" />
+        <Button mnemonicParsing="false" text="Резерв" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="396.0" AnchorPane.rightAnchor="35.0" />
+        <Label id="label" fx:id="label1" layoutX="191.0" text="Привет" AnchorPane.topAnchor="14.0">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Label>
+        <TextField id="text" fx:id="text1" layoutY="37.0" onAction="#onText1Method" prefWidth="337.0" promptText="Здесь выйдут обработанные данные" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="14.0" />
+        <TextField fx:id="text2" layoutY="79.0" onAction="#onGetText2" onInputMethodTextChanged="#onGetText2" prefWidth="337.0" promptText="Здесь ввести данные" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="14.0" />
+        <Label layoutX="22.0" layoutY="40.0" text="Вывод данных">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="22.0" layoutY="82.0" text="Ввод данных" />
+        <Circle fx:id="lamp" fill="#3354ff" layoutX="33.0" layoutY="122.0" radius="11.25" stroke="#cc0093" strokeType="INSIDE" strokeWidth="4.3" />
+        <Circle fx:id="indicator" fill="LIME" layoutX="171.0" layoutY="19.0" radius="12.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.5" />
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
